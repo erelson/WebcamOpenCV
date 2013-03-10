@@ -7,7 +7,9 @@ http://stackoverflow.com/questions/2601194/displaying-webcam-feed-using-opencv-a
 
 import cv2.cv as cv
 
-cv.NamedWindow("w1", cv.CV_WINDOW_AUTOSIZE)
+#cv.NamedWindow("w1", cv.CV_WINDOW_AUTOSIZE)
+cv.NamedWindow("w1", cv.CV_WINDOW_NORMAL)
+cv.ResizeWindow("w1", 900,650)
 #capture = cv.CaptureFromCAM(0)
 for i in range(10):
     capture = cv.CaptureFromCAM(i)
